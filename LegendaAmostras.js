@@ -30,7 +30,7 @@ black.gray = 100;
 white.gray = 0;
 activeDocument.layers[0].locked = false;
 var newGroup = doc.groupItems.add();
-newGroup.name = "NewGroup";
+newGroup.name = "Novo grupo";
 newGroup.move(doc, ElementPlacement.PLACEATBEGINNING);
 for (var c = 0, len = swatches.length; c < len; c++) {
     var swatchGroup = doc.groupItems.add();
@@ -140,7 +140,7 @@ function getColorValues(c, spot) {
         };
         return outputColors.join("");
     }
-    return "Non Standard Color Type";
+    return "Não é um tipo de cor padrão!";
 }
 
 function is_dark(c) {
